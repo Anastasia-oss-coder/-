@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffaf6;
+  color: #333;
+}
+
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+.header {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 10px 20px; border-radius: 12px; margin-bottom: 20px;
+}
+
+.logo { font-size: 24px; text-decoration: none; color: #444; }
+
+.nav a {
+  margin: 0 10px; text-decoration: none; color: #444;
+  font-weight: bold; padding: 6px 10px; border-radius: 8px;
+}
+.nav a:hover { background: #ffe8f0; }
+
+.hero {
+  display: flex; flex-wrap: wrap; gap: 20px;
+  background: #fef7f9; padding: 20px; border-radius: 15px;
+}
+.hero img { width: 300px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #fff; border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 15px; text-align: center;
+}
+.card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+.card h3 { margin: 10px 0 5px; }
+.price { color: #b35f79; font-weight: bold; }
+.card button {
+  background: #fcdce8; border: none; padding: 10px;
+  border-radius: 8px; cursor: pointer; font-weight: bold;
+}
+.card button:hover { background: #fbbcd5; }
+
+.form {
+  display: flex; flex-direction: column; gap: 10px;
+  background: #fff; padding: 20px; border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.form input, .form textarea {
+  padding: 10px; border-radius: 8px; border: 1px solid #ccc;
+}
+.form button {
+  background: #e6f8f2; border: none; padding: 10px;
+  border-radius: 8px; cursor: pointer; font-weight: bold;
+}
+.form button:hover { background: #d2f0e5; }
+
+.footer {
+  text-align: center; margin-top: 30px;
+  color: #777; font-size: 14px;
